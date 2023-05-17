@@ -13,6 +13,7 @@ for task in tasks:
     # Enqueue the task to the task topic
     producer.send(task_topic, task.encode('utf-8'))
     producer.flush()
+    print(f"Task enqueued: {task}")
 
 # Close the producer connection
 producer.close()

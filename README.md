@@ -22,9 +22,11 @@ This project demonstrates a simple implementation of a distributed task queue us
 
 ## Customization
 
-- Task Processing Logic: Customize the task processing logic in the `consumer.py` file according to your specific requirements. The provided example simply converts the tasks to uppercase.
+- Task Processing Logic: Customize the task processing logic in the `consumer.py` file according to your specific requirements. The provided example simply converts the tasks to uppercase. Here is the enhanced [consumer code](consumer.py) 
+
 - Scaling: You can scale the worker consumer by running multiple instances of the consumer code on different machines or processes. Kafka's distributed nature enables efficient load balancing across multiple consumers.
-- Error Handling: Enhance the code with error handling mechanisms, such as retrying failed tasks, logging errors, or sending alerts in case of task failures.
+
+- Error Handling: Enhance the code with error handling mechanisms, such as retrying failed tasks, logging errors, or sending alerts in case of task failures. [This consumer and producer code](consu_prod) has been improved for error handling
 
 ## Contributing
 
